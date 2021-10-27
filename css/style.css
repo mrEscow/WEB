@@ -4,3 +4,8 @@ body {
     font-family: Tahoma, Verdana, Arial, sans-serif;
     color:darkcyan;
 }
+
+.test-class {
+
+    color: blueviolet;
+}
