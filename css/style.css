@@ -25,6 +25,7 @@ body {
     padding: 20px;
     border-radius: 15px;
 }
+
 .test-class {
     display: flex;
     justify-content: center;
