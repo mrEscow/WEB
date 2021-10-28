@@ -8,15 +8,23 @@ body {
     justify-content: center;
     color:darkcyan;
 }
-.batton{
+.nav{
     display: flex;
     justify-content: center;
     list-style-type: none;
 }
 
-.batton>li{
-margin-left: 10px;
-margin-right: 10px;
+.nav>li{   
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.button{
+    background-color: rgb(211, 62, 191);
+    color: blue;
+    padding: 20px;
+    
+    border-radius: 15px;
 }
 .test-class {
     display: flex;
