@@ -12,6 +12,7 @@ header{
     display: flex;
     justify-content: center;
     list-style-type: none;
+    margin-right: 40px;
 }
 
 .nav>li{   
