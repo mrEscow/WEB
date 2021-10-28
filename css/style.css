@@ -21,6 +21,5 @@ margin-right: 10px;
 .test-class {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
     color: blueviolet;
 }
