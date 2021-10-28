@@ -1,11 +1,30 @@
 body {
-    width: 35em;
+    background-color:rgb(132, 180, 199);
+
+    /*
+    width: 30em;
     margin: 0 auto;
+    */
     font-family: Tahoma, Verdana, Arial, sans-serif;
-    color:darkcyan;
 }
 
+.header{
+    display: flex;
+    justify-content: center;
+    color:darkcyan;
+}
+.batton{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.batton>li{
+margin-left: 10px;
+margin-right: 10px;
+}
 .test-class {
 
+    margin: 0 auto;
     color: blueviolet;
 }
