@@ -38,6 +38,9 @@ header{
 .counter{
     display: flex;
     justify-content: center;
+}
+
+.counter>img{
     border: 0; 
     height: 62px; 
     width: 176px;
