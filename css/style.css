@@ -1,10 +1,5 @@
 body {
     background-color:rgb(132, 180, 199);
-
-    /*
-    width: 30em;
-    margin: 0 auto;
-    */
     font-family: Tahoma, Verdana, Arial, sans-serif;
 }
 
@@ -24,7 +19,8 @@ margin-left: 10px;
 margin-right: 10px;
 }
 .test-class {
-
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
     color: blueviolet;
 }
