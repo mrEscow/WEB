@@ -3,7 +3,7 @@ body {
     font-family: Tahoma, Verdana, Arial, sans-serif;
 }
 
-.header{
+header{
     display: flex;
     justify-content: center;
     color:darkcyan;
@@ -24,8 +24,11 @@ body {
     color: blue;
     padding: 20px;
     border-radius: 15px;
+    
 }
-
+.line{
+    color: rgb(37, 2, 70);
+}
 .test-class {
     display: flex;
     justify-content: center;
