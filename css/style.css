@@ -8,14 +8,14 @@ header{
     justify-content: center;
     color:darkcyan;
 }
-.nav{
+.nav>ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
     margin-right: 40px;
 }
 
-.nav>li{   
+.nav>ul>li{   
     margin-left: 10px;
     margin-right: 10px;
 }
