@@ -41,6 +41,15 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+.back {
+  border: none;
+  color: #fff;
+  background: green;
+  padding: 10px 16px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .active {
   background: rgba(0, 255, 0, 0.5);
 }
