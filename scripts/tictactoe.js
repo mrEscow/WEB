@@ -15,7 +15,7 @@ let game = document.querySelector('.game'),
 function stepCross(target) {
 	target.innerHTML = cross;
 	target.classList.add('x');
-	target.removeEventListener('click', init);
+	//target.removeEventListener('click', init);
 	let crossAudio = new Audio('audio/cross.mp3');
 	crossAudio.play();
 	count++;
@@ -23,16 +23,17 @@ function stepCross(target) {
 function stepZero(target) {
 	target.innerHTML = circle;
 	target.classList.add('o');
-	target.removeEventListener('click', init);
+	//target.removeEventListener('click', init);
 	let circleAudio = new Audio('audio/zero.mp3');
 	circleAudio.play();
 	count++;
 }
 
 function init(e) {
-	//e.target.removeEventListener('click', init)
+	
 	if (!step) stepCross(e.target);
 	else stepZero(e.target);
+	e.target.removeEventListener('click', init);
 	step = !step;	
 	win();
 }
