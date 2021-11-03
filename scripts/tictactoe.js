@@ -13,31 +13,34 @@ let game = document.querySelector('.game'),
 			</svg>`;
 
 function stepCross(target) {
+	if(target.innerHTML != ''){
+		step = !step;
+		return;
+	}
 	target.innerHTML = cross;
 	target.classList.add('x');
-	//target.removeEventListener('click', init);
 	let crossAudio = new Audio('audio/cross.mp3');
 	crossAudio.play();
 	count++;
 }
 function stepZero(target) {
+	if(target.innerHTML != ''){
+		step = !step;
+		return;
+	}
 	target.innerHTML = circle;
 	target.classList.add('o');
-	//target.removeEventListener('click', init);
+
 	let circleAudio = new Audio('audio/zero.mp3');
 	circleAudio.play();
 	count++;
 }
-
-function init(e) {
-	
+function init(e) {	
 	if (!step) stepCross(e.target);
 	else stepZero(e.target);
-	e.target.removeEventListener('click', init);
 	step = !step;	
 	win();
 }
-
 function newGame() {
 	step = false;
 	count = 0;
