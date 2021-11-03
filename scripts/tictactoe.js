@@ -28,7 +28,7 @@ function stepZero(target) {
 }
 
 function init(e) {
-	e.removeEventListener('click', init);
+	e.target.removeEventListener('click', init)
 	if (!step) stepCross(e.target);
 	else stepZero(e.target);
 	step = !step;	
