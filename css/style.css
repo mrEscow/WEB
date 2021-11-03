@@ -25,7 +25,8 @@ header{
     color: blue;
     padding: 20px;
     border-radius: 15px;
-    
+    font-size:larger;
+    font-weight: bold;
 }
 .line{
     color: rgb(37, 2, 70);

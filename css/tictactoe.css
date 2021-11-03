@@ -41,7 +41,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
-.back {
+.back-button {
   border: none;
   color: #fff;
   background: green;
