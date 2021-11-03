@@ -15,7 +15,7 @@ let game = document.querySelector('.game'),
 function stepCross(target) {
 	target.innerHTML = cross;
 	target.classList.add('x');
-	target.removeEventListener('click');
+	target.removeEventListener('click', init);
 	let crossAudio = new Audio('audio/cross.mp3');
 	crossAudio.play();
 	count++;
@@ -23,7 +23,7 @@ function stepCross(target) {
 function stepZero(target) {
 	target.innerHTML = circle;
 	target.classList.add('o');
-	target.removeEventListener('click');
+	target.removeEventListener('click', init);
 	let circleAudio = new Audio('audio/zero.mp3');
 	circleAudio.play();
 	count++;
