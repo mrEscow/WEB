@@ -85,7 +85,7 @@ function win() {
 		}
 
 		else if (count == 9) {
-			setTimeout(1000);
+			setTimeout(1500);
 			res.innerText = 'Ничья';
 			game.removeEventListener('click', init);
 		}
