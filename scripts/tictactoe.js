@@ -13,10 +13,6 @@ let game = document.querySelector('.game'),
 			</svg>`;
 
 function stepCross(target) {
-	if(target.innerHTML != ''){
-		step = !step;
-		return;
-	}
 	target.innerHTML = cross;
 	target.classList.add('x');
 	let crossAudio = new Audio('audio/cross.mp3');
@@ -24,18 +20,16 @@ function stepCross(target) {
 	count++;
 }
 function stepZero(target) {
-	if(target.innerHTML != ''){
-		step = !step;
-		return;
-	}
 	target.innerHTML = circle;
 	target.classList.add('o');
-
 	let circleAudio = new Audio('audio/zero.mp3');
 	circleAudio.play();
 	count++;
 }
 function init(e) {	
+	if(e.target.innerHTML != ''){
+		return;
+	}
 	if (!step) stepCross(e.target);
 	else stepZero(e.target);
 	step = !step;	
