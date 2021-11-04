@@ -11,6 +11,14 @@ body {
     linear-gradient(90deg, rgba(0, 0, 0, 0.4), transparent 1px);
   background-size: 30px 30px;
 }
+.name {
+  
+  color: rgb(14, 58, 138);
+  font-weight: bold;
+  font-size: 40px;
+  font-family: Arial;
+  height: 50px; 
+}
 .res {
   color: green;
   font-weight: bold;
