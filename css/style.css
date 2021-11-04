@@ -1,12 +1,14 @@
 body {
     background-color:rgb(132, 180, 199);
+    background-image:radial-gradient( rgb(33, 82, 156),rgb(90, 175, 209) );
     font-family: Tahoma, Verdana, Arial, sans-serif;
 }
 
 header{
     display: flex;
     justify-content: center;
-    color:darkcyan;
+    color:rgb(1, 99, 99);
+    font-weight: bolder;
 }
 .nav>ul {
     display: flex;
@@ -22,9 +24,12 @@ header{
 
 .button{
     background-color: rgb(211, 62, 191);
+    background-image:linear-gradient(to bottom right, rgb(127, 12, 131), rgb(211, 62, 191));
     color: blue;
+    outline-color: chartreuse;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 25px;
+    font-family:-apple-system;
     font-size:larger;
     font-weight: bold;
 }
@@ -34,7 +39,7 @@ header{
 .test-class {
     display: flex;
     justify-content: center;
-    color: blueviolet;
+    color: rgb(81, 3, 155);
 }
 
 .counter{
