@@ -4,17 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Крестики-Нолики</title>
+    <title>FORMA</title>
     <link rel="shortcut icon" href="images/man.png" type="image/x-icon">
     <link rel="stylesheet" href="">
 </head>
 
 <body>
     <div>
-        <div>
-            <form action="" id="form" class="form_body"></form>
+        <div class="form">
+            <form action="#" id="form" class="form_body">
+                <h1 class="">Отправка данных на почту</h1>
+                <div class="">
+                    <label for="formName" class="from_label">Имя*:</label>
+                    <input id="formName" type="text" name="name" class="from_imput _req">
+                </div>
+                <div> class=""
+                    <label for="formEmail" class="from_label">E-mail*:</label>
+                    <input id="formEmail" type="text" name="email" class="from_imput _req _email">
+                </div>
+                <div class="">
+                    <label for="formMessage" class="from_label">Сообщение:</label>
+                    <textarea name="Message" id="fromMessage" class="from_imput"></textarea>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
         </div>
     </div>
+    <script src="scripts/forma.js"></script>
 </body>
 
 </html>
