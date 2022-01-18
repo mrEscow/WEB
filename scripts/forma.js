@@ -8,6 +8,25 @@ document.addEventListener('DomContentLoaded', function() {
         e.preventDefault();
 
         let error = formValidate(form);
+
+        let formData = new FormData(form);
+        //formData.append('image', fromImage.files[0]); 
+        if (error === 0) {
+            let response = await fetch('sendmail.php', {
+                method: 'POST',
+                body: formData
+            });
+            if (response.ok) {
+                let result = await response.json();
+                alert(result.message);
+                fromPreview.innerHTML = '';
+                form.reset();
+            } else {
+                alert('Ошибка!');
+            }
+        } else {
+            alert('Заполни обязательные поля!!!');
+        }
     }
 
     function formValidate(form) {
@@ -32,5 +51,7 @@ document.addEventListener('DomContentLoaded', function() {
             input.parentElement.classList.remove('_error');
             input.classList.remove('_error');
         }
+
+        return error;
     }
 });
