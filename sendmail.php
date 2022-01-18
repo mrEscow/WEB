@@ -13,7 +13,7 @@ $mail->setLanguage('ru','PHPMailer/language');
 $mail->IsHTML(true);
 
 // От кого письмо
-$mail->setFrom(smtp_user, 'VEEEEE!');
+$mail->setFrom('escowxbox@mail.ru', 'VEEEEE!');
 // Кому отправлять
 $mail->addAddress('escowxbox@mail.ru');
 // Тема писльма
