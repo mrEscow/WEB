@@ -21,6 +21,7 @@ document.addEventListener('DomContentLoaded', function() {
                 alert(result.message);
                 fromPreview.innerHTML = '';
                 form.reset();
+                alert('Спасибо!'); // test
             } else {
                 alert('Ошибка!');
             }
